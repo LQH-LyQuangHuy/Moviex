@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    text-align: left;
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--light-text);
+    overflow: hidden;
+    
+}
+
+
+.thumbnail{
+    width: 100%;
+    height: 270px;
+    flex: 1;
+    img {
+        display: block;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.thumbnail:hover  {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.name {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 0 0 5px 5px;
+    line-height: 25px;
+    color: white;
+    overflow: hidden;
+
+    &:hover {
+        color: #c96620;
+        cursor: pointer;
+    }
+}
+
+

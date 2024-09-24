@@ -1,0 +1,21 @@
+.Header_active {
+    display: block !important;
+    
+}
+
+.Header_active::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 6px;
+}
+
+.Header_active::-webkit-scrollbar-thumb {
+    height: 50px;
+    border-radius: 15px; 
+    background-color: rgb(201, 102, 32); 
+}
+
+.Header_active::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: rgba(140, 104, 104, 0.4)
+}
+

@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.css-dev-only-do-not-override-2b97an.ant-carousel .slick-prev, .css-dev-only-do-not-override-2b97an.ant-carousel .slick-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+
+
+a:-webkit-any-link  {
+  text-decoration: none;
+}
+
+/* ----------------override css antd---------------- */
+/* Caroulse */
+
+.css-dev-only-do-not-override-2b97an.ant-carousel .slick-prev {
+  left: 0;
+  background-color: red;
+}
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-prev::after {
+  transform: rotate(-45deg) translate(12px, 12px);
+}
+
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-next::after {
+  transform: rotate(135deg) translate(-5px, -5px);;
+}
+
+.css-dev-only-do-not-override-2b97an.ant-carousel .slick-next {
+  right: 0;
+  background-color: red;
+}
+
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-list .slick-slide.slick-active,
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-initialized .slick-slide {
+  width: 200px !important;
+  margin-right: 30px;
+}
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-prev::after, 
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-next::after {
+  top: 33%;
+}
+
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-slider .slick-track, 
+:where(.css-dev-only-do-not-override-2b97an).ant-carousel .slick-slider .slick-list {
+  height: 290px;
+  /* background: #000; */
+  border-radius: 5px;
+}
+
+/* Pagination */
+:where(.css-dev-only-do-not-override-72velj).ant-pagination .ant-pagination-item {
+  background-color: #585353;
+}
+
+:where(.css-dev-only-do-not-override-72velj).ant-pagination .ant-pagination-item-active {
+  background-color: white;
+  border: none;
+}
+
+
+

@@ -1,0 +1,109 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 200px 0;
+    color: white;
+    background-color: var(--primary-background-color);
+    
+}
+
+.video {
+    background-color: rgb(13, 12, 12);
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+
+    .vd {
+        width: 100%;
+        height: 100%;
+    }
+
+    .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.movie-info{
+
+}
+
+.movie-lang {
+    margin: 50px 0 25px;
+}
+
+.movie-episodes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: #242424;
+}
+
+.episode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    min-width: 50px;
+    width: 60px;
+    padding: 0 5px;
+    height: 30px;
+    background-color: #4c4c44;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    
+}
+
+.episode.active {
+    background-color: red;
+}
+
+
+.relate-movies-wrapper {
+    margin-top: 50px;
+}
+
+
+.relate-movies-list {
+    display: flex;
+    margin-top: 25px;
+    
+}
+
+.relate-movie + .relate-movie {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1220px) {
+    .wrapper {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    
+    .video {
+    
+        width: 100%;
+        height: 420px;
+
+    }
+}

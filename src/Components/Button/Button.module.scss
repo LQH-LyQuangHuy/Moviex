@@ -1,0 +1,30 @@
+.wrapper {
+    min-width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 8px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    text-decoration: none;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.primary {
+    height: 34px;
+    font-weight: 400;
+}
+
+.large {
+    
+    height: 62px;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0 16px ;
+}
+
